@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Project Revou</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@100;300;400;700&display=swap"
+    rel="stylesheet"
+  </head>
+  <body>
+    <!-- Section Header Start -->
+    <section class="header">
+      <h1 class="shaking">Welcome To <span>Katik</span></h1>
+      <h3>Hai sobat, selamat datang di katik</h3>
+      <p>
+        Sebuah web Apps sederhana yang berfungsi untuk menghitung nilai luas dan
+        keliling bangun datar
+      </p>
+      <h2>Segitiga</h2>
+      <h3>Jajar Genjang</h3>
+    </section>
+    <!-- Section Header End -->
+
+    <!-- Section Content Start -->
+
+    <section class="content">
+      <h1>Luas Segitiga</h1>
+      <img src="assetimg/segitiga.jpg" alt="" />
+      <h4>Rumus Luas Segitiga yaitu:</h4>
+      <h5>L = 1/2 x a x t</h5>
+      <div>
+        <p>Dimana : <br />L = luas <br />a = Panjang Alas <br />t = Tinggi</p>
+      </div>
+    </section>
+
+    <!-- Section Content End-->
+
+    <!-- Section Luas Segitiga Start -->
+
+    <section class="luas-segitiga">
+      <h1>Hitung Luas Segitiga</h1>
+      <div>
+        <label for="number" class="container-content">
+          <input type="number" id="alas" placeholder="Nilai Alas..." />
+          <input type="number" id="tinggi" placeholder="Nilai TInggi..." />
+        </label>
+        <div class="ini-btn">
+          <p id="result" class="hasil-hitung"></p>
+          <button class="btn-hitung" onclick="areaHitung()">HITUNG</button>
+          <button class="btn-reset" onclick="areaReset()">RESET</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Luas Segitiga End -->
+
+    <!-- Section Keliling Segitiga -->
+    <section class="keliling-segitiga">
+      <h1>Keliling Segitiga</h1>
+      <img src="assetimg/segitiga.jpg" alt="" />
+      <h4>Rumus Keliling Segitiga yaitu:</h4>
+      <h5>K = S1 + S2 + S3</h5>
+      <div>
+        <p>
+          Dimana : <br />K = Keliling <br />S1 = Sisi A <br />S2 = Sisi B
+          <br />S3 = Sisi C
+        </p>
+      </div>
+    </section>
+    <!-- Section Keliling Segitiga End -->
+
+    <!-- Section Hitung Keliling Segitiga -->
+    <section class="hk-segitiga">
+      <h1>Hitung Keliling Segitiga</h1>
+      <div>
+        <label for="number" class="form-input">
+          <input type="number" id="sisiSatu" placeholder="S1..." />
+          <input type="number" id="sisiDua" placeholder="S2..." />
+          <input type="number" id="sisiTiga" placeholder="S3..." />
+        </label>
+        <div class="button-content">
+          <p id="finnaly" class="hasil-hitung"></p>
+          <button class="button-hitung" onclick="ayoHitung()">HITUNG</button>
+          <button class="button-reset" onclick="ayoReset()">RESET</button>
+        </div>
+      </div>
+    </section>
+    <div class="copyright">
+      <p>Copyright 2023 By Muhammad Rafly Eka Saputra</p>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
